@@ -242,3 +242,118 @@ button:focus {
 	stroke: #28a745;
 	fill: #28a745;
 }
+
+/* Адаптив */
+@media screen and (max-width: 768px) {
+	.header-section {
+		padding: 15px 20px;
+	}
+	.form-section {
+		padding: 15px;
+		margin: 20px auto;
+	}
+	.task-form {
+		grid-template-columns: 1fr auto;
+		grid-template-rows: auto;
+	}
+	.task-input {
+		grid-column: 1;
+		grid-row: 1;
+		height: 2.5rem;
+	}
+	.add-task-btn {
+		grid-column: 2;
+		grid-row: 1;
+		padding: 10px 15px;
+		height: 2.5rem;
+	}
+	.tasks-section {
+		width: 95%;
+	}
+	.task-item {
+		padding: 10px;
+		flex-wrap: wrap;
+	}
+	.task-item__buttons {
+		margin-left: 10px;
+	}
+	.clear-btn {
+		padding: 10px;
+		max-width: 250px;
+	}
+}
+
+/* Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+	.header-section {
+		padding: 10px 15px;
+	}
+	.main-title {
+		font-size: 1.5rem;
+	}
+	.form-section {
+		padding: 10px;
+		margin: 15px auto;
+	}
+	.task-form {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto;
+	}
+	.form-title {
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.task-input {
+		grid-column: 1;
+		grid-row: 2;
+		height: 2.2rem;
+		font-size: 0.9rem;
+	}
+	.add-task-btn {
+		grid-column: 1;
+		grid-row: 3;
+		padding: 8px;
+		height: 2.2rem;
+		font-size: 0.9rem;
+	}
+	.tasks-section {
+		width: 98%;
+		gap: 15px;
+	}
+	.task-category {
+		padding: 8px;
+	}
+	.category-title {
+		padding: 8px 12px;
+		font-size: 0.9rem;
+	}
+	.task-item {
+		padding: 8px;
+		font-size: 0.85rem;
+	}
+	.task-input-edit {
+		width: calc(100% - 80px);
+		font-size: 0.85rem;
+	}
+	.button__redact,
+	.button__redact-svg {
+		width: 16px;
+		height: 16px;
+		margin-right: 8px;
+	}
+	.task-checkbox + .checkbox-label {
+		width: 16px;
+		height: 16px;
+		margin-right: 6px;
+	}
+	.task-checkbox + .checkbox-label svg {
+		width: 16px;
+
+		height: 16px;
+	}
+	.clear-btn {
+		padding: 8px;
+		max-width: 200px;
+		font-size: 0.9rem;
+	}
+}
