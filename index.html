@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Планировщик дел</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header-section">
+            <h1 class="main-title">Список задач</h1>
+        </header>
+        <section class="form-section">
+            <form id="form" class="task-form">
+                <h2 class="form-title">Новая задача</h2>
+                <input id="taskInput" class="task-input" placeholder="Название задачи..." type="text">
+                <button type="submit" class="add-task-btn" id="addTaskBtn">Добавить</button>
+            </form>
+        </section>
+        <section class="tasks-section">
+            <ul id="taskList" class="task-category pending">
+                <h3 class="category-title">Задача</h3>
+            </ul>
+            <ul class="task-category completed">
+                <h3 class="category-title">Готово</h3>
+            </ul>
+            <ul class="task-category discarded">
+                <h3 class="category-title clear-title">Корзина</h3>
+                <div class="btn">
+                    <button class="clear-btn" id="clearTasksBtn">Очистить</button>
+                </div>
+            </ul>
+        </section>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
